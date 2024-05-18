@@ -1,0 +1,25 @@
+{
+  "name": "@native-ts/calendar-core",
+  "version": "0.0.1",
+  "description": "JavaScript make base calendar component functions",
+  "main": "./libs/index.js",
+  "types": "./libs/index.d.ts",
+  "repository": "git@github.com:native-ts/calendar-core.git",
+  "author": "Canh Nguyen Van <ngvcanh2014@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "libs/*.js",
+    "libs/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc --removeComments && tsc --declaration --emitDeclarationOnly --declarationDir ./libs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
